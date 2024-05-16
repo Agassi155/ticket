@@ -34,8 +34,6 @@ public class User {
     //for the role and restriction on resources
     private String password;
     private String roles;
-
-    //@JsonBackReference
     @OneToMany(mappedBy = "userOwner")
     private List<Ticket> tickets;
 

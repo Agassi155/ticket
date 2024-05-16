@@ -34,6 +34,5 @@ public class Ticket {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "idUser")
-    // @JsonManagedReference
     private User userOwner;
 }
